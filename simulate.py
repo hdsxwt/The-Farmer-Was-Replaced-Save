@@ -1,17 +1,24 @@
 sim_items = {Items.Wood:1, Items.Weird_Substance:9999999999}
-speedup = 600
+speedup = 1000
 seed = 1
 sim_globals = {}
 res = []
+
+sim_unlock = {}
+
+for uk in Unlocks:
+	sim_unlock[uk] = 20
+	
+sim_unlock[Unlocks.Expand] = 20
 
 # modify
 k = 5
 
 for i in range(k):
-	seed = random() * 65536 // 1
-	tmp = simulate("maze", Unlocks, sim_items, sim_globals, seed, speedup)
+	seed = i * i
+	tmp = simulate("maze", sim_unlock, sim_items, sim_globals, seed, speedup)
 	res.append(tmp)
-	print(tmp)
+	quick_print(tmp)
 
 sum = 0
 for i in range(k):
