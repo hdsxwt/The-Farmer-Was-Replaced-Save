@@ -7,3 +7,4 @@ from carrot import *
 from grass import *
 from sunflower import *
 from cactus import *
+from for_all import for_all

@@ -13,3 +13,6 @@ def try_plant(ground, entity):
 				#till()
 			#return plant(Entities.Sunflower)
 	return plant(entity)
+	
+def try_plant_(data):
+	return try_plant(data[0], data[1])
