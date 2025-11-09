@@ -5,6 +5,8 @@ def run_grass(target=None, data=None):
 	def run():
 		for j in range(get_world_size()):
 			harvest()
+			if (get_ground_type()==Grounds.Soil):
+				till()
 			move(East)
 	for i in range(max_drones()):
 		if not spawn_drone(run):

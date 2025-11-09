@@ -1,4 +1,4 @@
-from more_move import *
+from std import *
 
 def run_pumkin(target=None, data=None):
 	siz = get_world_size()

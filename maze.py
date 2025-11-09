@@ -140,6 +140,14 @@ def run_maze_mul(target=None, data=None):
 	substance = get_world_size() * 2**(num_unlocked(Unlocks.Mazes) - 1)
 	use_item(Items.Weird_Substance, substance)
 	global n
+	global vis
+	global G
+	global lst
+	global dis
+	vis = []
+	G = []
+	lst = []
+	dis = []
 	n = get_world_size()
 	
 	# set the time here
@@ -183,7 +191,7 @@ def run_maze(target=None, data=None):
 if __name__ == "__main__":
 	#set_execution_speed(1)
 	#set_world_size(5)
-	run_maze_mul(None, 200)
+	run_maze_mul(None, 50)
 	
 # 10 times searching
 # bfs no_updated: 419.28s

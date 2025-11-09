@@ -1,5 +1,6 @@
 from more_move import *
 from insertion_sort_binar import *
+from for_all import for_all
 from try_plant import *
 from pumkin import *
 from wood import *
@@ -7,4 +8,3 @@ from carrot import *
 from grass import *
 from sunflower import *
 from cactus import *
-from for_all import for_all
