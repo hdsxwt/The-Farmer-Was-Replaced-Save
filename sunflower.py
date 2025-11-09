@@ -1,5 +1,8 @@
 from std import *
 
+# TODO rebuild
+# 采用多线程计数排序重构
+
 def run_sunflower(target=None, data=None):
 	
 	st = get_tick_count()
