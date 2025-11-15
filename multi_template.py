@@ -1,5 +1,5 @@
 def commonRet():
-	return [None]
+	return [0]
 	# the position 0 is signal
 clear()
 drone = spawn_drone(commonRet)
@@ -13,17 +13,14 @@ def f(id, shared):
 
 def worker():
 	shared = wait_for(drone)
-	id = num_drones()-1
+	
+	id = shared[0] + 1
 	shared.append(id)
+	shared[0] += 1
 	while True:
 		f(id, shared)
 
-for i in range(max_drones()-1):
-	spawn_drone(worker)
+for i in range(max_drones()):
+	if not spawn_drone(worker):
+		worker()
 	move(North)
-
-shared = wait_for(drone)
-id = num_drones()
-shared.append(id)
-while True:
-	f(id, shared)
