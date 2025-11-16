@@ -13,6 +13,17 @@ def try_plant(ground, entity):
 				#till()
 			#return plant(Entities.Sunflower)
 	return plant(entity)
-	
-def try_plant_(data):
-	return try_plant(data[0], data[1])
+
+
+def try_plant(data):
+	if data == Entities.Grass:
+		if get_ground_type() != Grounds.Grassland:
+			till()
+	else:
+		if get_ground_type() != Grounds.Soil:
+			till()
+	plant(data)
+	return None
+
+if __name__ == "__main__":
+	try_plant(Entities.Bush)
