@@ -1,24 +1,21 @@
-from std import *
+from more_move import *
 
-def run_pumkin(target=None, data=None):
-	siz = get_world_size()
-	move_to(0, 0)
+def run_pumkin(siz, st_x, st_y, target = None):
+	move_to(st_x, st_y)
 	vec = []
 	vis = []
 	cnt = 0
-	siz = get_world_size()
-	for i in range(siz):
-		for j in range(siz):
+	for x in range(st_x, st_x + siz):
+		for y in range(st_y, st_y + siz):
+			move_to(x, y)
 			if can_harvest():
 				harvest()
 			if get_ground_type() == Grounds.Grassland:
 				till()
 			if plant(Entities.Pumpkin):
-				vec.append((i ,j))
+				vec.append((x, y))
 				vis.append(False)
 				cnt += 1
-			mov(0, 1)
-		mov(1, 0)
 	
 	while(cnt != 0):
 		for p in range(len(vec)):
@@ -32,16 +29,22 @@ def run_pumkin(target=None, data=None):
 				cnt-=1
 			elif get_entity_type() == Entities.Dead_Pumpkin:
 				plant(Entities.Pumpkin)
+			else:
+				plant(Entities.Pumpkin)
 	if target == Items.Weird_Substance:
-		move_to(0, 0)
-		for i in range(siz):
-			for j in range(siz):
+		move_to(st_x, st_y)
+		for i in range(st_x, st_x + siz):
+			for j in range(st_y, st_y + siz):
+				move_to(i, j)
 				if (i*2+j)%5==0:
 					use_item(Items.Weird_Substance)
-				mov(0, 1)
-			mov(1, 0)
 	harvest()
 			
 if __name__ == "__main__":
-	while True:
-		run_pumkin(Items.Weird_Substance)
+	clear()
+	for x in range(1, get_world_size(), 7):
+		for y in range(1, get_world_size(), 7):
+			def f():
+				run_pumkin(6, x, y)
+			if not spawn_drone(f):
+				f()
