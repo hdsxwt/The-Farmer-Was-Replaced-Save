@@ -1,4 +1,5 @@
 from std import *
+from more_move import *
 
 # signal [7, 15]
 
@@ -7,7 +8,7 @@ siz_y = 8
 
 def main():
 	def commonRet():
-		return [[0, 0]]
+		return [[0, 0, 0]]
 		# the position [0][0] is signal
 		# the position [0][1] is cnt
 	clear()
@@ -37,7 +38,6 @@ def main():
 				pass
 			shared[0][0] = -1
 			shared[0][1] = 0
-		# BUG
 		while shared[0][0] != -1:
 			pass
 
@@ -48,22 +48,40 @@ def main():
 		for x in range(st_x, st_x + siz_x):
 			for y in range(st_y, st_y + siz_y):
 				move_to(x, y)
-				try_plant(Entities.Sunflower)
+				c_try_plant(Entities.Sunflower)
 				G[measure()].append((x, y))
 		shared[0][1] += 1
 
 		if id == 0:
 			while shared[0][1] < num_drones():
 				pass
-			shared[0][0] = -2
-		while shared[0][0] != -2:
+			shared[0][0] = 15
+			shared[0][1] = 0
+		while shared[0][0] != 15:
 			pass
+		
 		do_a_flip()
-		if id == 0:
-			print(shared)
-		# TODO: harvest
-		while True:
-			pass
+
+		for i in range(15, 6, -1):
+			while shared[0][0] > i:
+				pass
+			for pos in G[i]:
+				x, y = pos
+				move_to(x, y)
+				while not can_harvest():
+					pass
+				harvest()
+			shared[0][1] += 1
+
+			if id == 0:
+				while True:
+					if shared[0][1] == num_drones():
+						shared[0][1] = 0
+						shared[0][2] = 0
+						shared[0][0] -= 1
+						break
+			
+			
 
 	for i in range(max_drones()):
 		if not spawn_drone(worker):
@@ -71,5 +89,5 @@ def main():
 		move(North)
 
 if __name__ == "__main__":
-	set_execution_speed(10)
+	# set_execution_speed(10)
 	main()

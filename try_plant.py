@@ -15,7 +15,7 @@ def try_plant(ground, entity):
 	return plant(entity)
 
 
-def try_plant(data):
+def c_try_plant(data):
 	if data == Entities.Grass:
 		if get_ground_type() != Grounds.Grassland:
 			till()
