@@ -13,7 +13,7 @@ def worker():
 				deadcnt = 0
 				pcnt = 0
 		
-		water_line = 0.30 # min 0.08
+		water_line = 0.30 # min 0.30
 		while (not can_harvest()) and get_entity_type() != None:
 			deadcnt += 30
 			if get_water() <= water_line:

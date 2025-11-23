@@ -15,7 +15,7 @@ def worker():
 		if get_ground_type() == Grounds.Grassland:
 			till()
 		
-		water_line = 0.30 # min 0.08
+		water_line = 0.30 # min 0.30
 		while (not can_harvest()) and get_entity_type() != None:
 			deadcnt += 30
 			if get_water() <= water_line:
