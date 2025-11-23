@@ -6,7 +6,7 @@ def worker():
 		cnt += 1
 		if get_pos_x() == 0 and get_pos_y() == 0:
 			pcnt += 1
-			if pcnt == 10:
+			if pcnt == 1:
 				quick_print(deadcnt/cnt)
 				cnt = 0
 				deadcnt = 0
@@ -15,7 +15,7 @@ def worker():
 		if get_ground_type() == Grounds.Grassland:
 			till()
 		
-		water_line = 0.08 # min 0.08
+		water_line = 0.30 # min 0.08
 		while (not can_harvest()) and get_entity_type() != None:
 			deadcnt += 30
 			if get_water() <= water_line:
