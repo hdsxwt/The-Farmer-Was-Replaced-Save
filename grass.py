@@ -1,7 +1,6 @@
 
 def run_grass():
 	clear()
-
 	def worker():
 		while True:
 			harvest()
