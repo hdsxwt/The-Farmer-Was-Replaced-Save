@@ -1,8 +1,9 @@
 
 def run_grass():
-	clear()
 	def worker():
 		while True:
+			if get_ground_type() == Grounds.Soil:
+				till()
 			harvest()
 			move(East)
 
