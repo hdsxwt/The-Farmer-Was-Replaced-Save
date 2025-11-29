@@ -2,6 +2,8 @@
 	"conventionalCommits.scopes": [
 		"tree",
 		"carrot",
-		"cactus"
-	]
+		"cactus",
+		"multiple_planting"
+	],
+	"python.analysis.autoImportCompletions": false
 }
