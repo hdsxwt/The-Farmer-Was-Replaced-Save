@@ -2,15 +2,18 @@ def worker():
 	pcnt = 0
 	cnt = 0
 	deadcnt = 0
+	lst_t = get_time()
 	while True:
 		cnt += 1
 		if get_pos_x() == 0 and get_pos_y() == 0:
 			pcnt += 1
 			if pcnt == 1:
 				quick_print(deadcnt/cnt)
+				quick_print(get_time() - lst_t)
 				cnt = 0
 				deadcnt = 0
 				pcnt = 0
+				lst_t = get_time()
 		
 		if get_ground_type() == Grounds.Grassland:
 			till()
