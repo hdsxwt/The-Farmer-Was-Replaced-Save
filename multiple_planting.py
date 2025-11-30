@@ -79,8 +79,8 @@ def worker():
 			c_try_plant(G[x][y])
 			real[x][y] = G[x][y]
 		else:
-			c_try_plant(Entities.Carrot)
-			real[x][y] = Entities.Carrot
+			c_try_plant(Entities.Grass)
+			real[x][y] = Entities.Grass
 		plant_type, (x, y) = get_companion()
 		G[x][y] = plant_type
 		shared[id] = (shared[id] + 1) % get_world_size()
