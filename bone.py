@@ -14,9 +14,7 @@ def run_bone():
 			global y
 			x, y = measure()
 			cnt += 1
-		ti = get_tick_count()
 		move(dir)
-		quick_print(get_tick_count() - ti)
 	while cnt < siz * (siz-3):
 		quick_print(cnt, siz * (siz-3))
 		try_move(North)
