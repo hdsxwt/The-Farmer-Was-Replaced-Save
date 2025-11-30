@@ -3,7 +3,8 @@
 		"tree",
 		"carrot",
 		"cactus",
-		"multiple_planting"
+		"multiple_planting",
+		"bone"
 	],
 	"python.analysis.autoImportCompletions": false
 }

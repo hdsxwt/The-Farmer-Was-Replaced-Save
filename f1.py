@@ -1,2 +1,1 @@
-from for_all import *
-for_all(harvest)
+print(get_entity_type())
