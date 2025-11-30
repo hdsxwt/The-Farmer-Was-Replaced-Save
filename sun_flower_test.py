@@ -1,5 +1,5 @@
 sim_items = {Items.Cactus:999999999, Items.Power: 99999}
-speedup = 30
+speedup = 300
 sim_globals = {}
 res = []
 
@@ -14,3 +14,4 @@ while True:
 	seed = random() * 65536 // 1
 	quick_print(seed)
 	res = simulate("bone", sim_unlock, sim_items, sim_globals, seed, speedup)
+	quick_print(res)

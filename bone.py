@@ -15,8 +15,7 @@ def run_bone():
 			x, y = measure()
 			cnt += 1
 		move(dir)
-	while cnt < siz * (siz-3):
-		quick_print(cnt, siz * (siz-3))
+	while cnt < siz * siz / 2.8:
 		try_move(North)
 		k = (cnt - 2*siz + 2) / (siz - 1) / 2
 		i = 0
