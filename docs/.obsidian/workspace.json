@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/scripting/break.md",
+                "file": "merge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "break"
+              "title": "merge"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/scripting/break.md",
+                "file": "merge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "break 的反向链接列表"
+              "title": "merge 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/scripting/break.md",
+                "file": "merge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "break 的出链列表"
+              "title": "merge 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/scripting/break.md",
+                "file": "merge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "break 的大纲"
+              "title": "merge 的大纲"
             }
           }
         ]
@@ -184,8 +184,24 @@
   },
   "active": "88e5d42358091a8b",
   "lastOpenFiles": [
-    "未命名.base",
+    "Strings/warnings.md",
+    "Strings/unlock_tooltips.md",
+    "Strings/popup_warnings.md",
+    "Strings/parse_errors.md",
+    "Strings/other.md",
+    "Strings/options.md",
+    "Strings/object_tooltips.md",
+    "Strings/leaderboard_tooltips.md",
+    "Strings/languages.md",
+    "Strings/item_tooltips.md",
+    "Strings/hat_tooltips.md",
+    "Strings/execute_errors.md",
+    "Strings/code_tooltips.md",
+    "Strings/button_tooltips.md",
+    "Strings/buttons.md",
+    "Strings/run.py",
     "docs/scripting/break.md",
+    "未命名.base",
     "docs/scripting/continue.md",
     "docs/scripting/for.md",
     "docs/others/external_editor.md",
