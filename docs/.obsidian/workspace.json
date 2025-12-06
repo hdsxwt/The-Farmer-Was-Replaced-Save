@@ -182,15 +182,15 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "bf61d1832c465816",
+  "active": "88e5d42358091a8b",
   "lastOpenFiles": [
+    "未命名.base",
+    "docs/scripting/break.md",
     "docs/scripting/continue.md",
     "docs/scripting/for.md",
-    "docs/scripting/break.md",
     "docs/others/external_editor.md",
     "docs/others/credits.md",
     "docs/others/backup.md",
-    "merge.md",
-    "未命名.base"
+    "merge.md"
   ]
 }
