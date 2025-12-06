@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "merge.md",
+                "file": "docs/scripting/functions.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "merge"
+              "title": "functions"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "merge.md",
+                "file": "docs/scripting/functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "merge 的反向链接列表"
+              "title": "functions 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "merge.md",
+                "file": "docs/scripting/functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "merge 的出链列表"
+              "title": "functions 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "merge.md",
+                "file": "docs/scripting/functions.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "merge 的大纲"
+              "title": "functions 的大纲"
             }
           }
         ]
@@ -182,8 +182,26 @@
       "bases:创建新数据库": false
     }
   },
-  "active": "88e5d42358091a8b",
+  "active": "bf61d1832c465816",
   "lastOpenFiles": [
+    "docs/scripting/if.md",
+    "docs/scripting/functions.md",
+    "docs/scripting/for.md",
+    "docs/scripting/debug.md",
+    "docs/scripting/comments.md",
+    "docs/scripting/continue.md",
+    "docs/scripting/dicts.md",
+    "docs/scripting/lists.md",
+    "Breakpoints227.md",
+    "docs/scripting/break.md",
+    "docs/others/external_editor.md",
+    "docs/others/credits.md",
+    "docs/others/backup.md",
+    "Strings/execute_errors.md",
+    "Strings/code_tooltips.md",
+    "Strings/buttons.md",
+    "Strings/button_tooltips.md",
+    "merge.md",
     "Strings/warnings.md",
     "Strings/unlock_tooltips.md",
     "Strings/popup_warnings.md",
@@ -192,21 +210,7 @@
     "Strings/options.md",
     "Strings/object_tooltips.md",
     "Strings/leaderboard_tooltips.md",
-    "Strings/languages.md",
-    "Strings/item_tooltips.md",
-    "Strings/hat_tooltips.md",
-    "Strings/execute_errors.md",
-    "Strings/code_tooltips.md",
-    "Strings/button_tooltips.md",
-    "Strings/buttons.md",
     "Strings/run.py",
-    "docs/scripting/break.md",
-    "未命名.base",
-    "docs/scripting/continue.md",
-    "docs/scripting/for.md",
-    "docs/others/external_editor.md",
-    "docs/others/credits.md",
-    "docs/others/backup.md",
-    "merge.md"
+    "未命名.base"
   ]
 }

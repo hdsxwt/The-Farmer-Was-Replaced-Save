@@ -33,8 +33,10 @@ entity_dict = {(x,y):get_entity_type()}`
 所以你可以使用 `if key in dict:` 来判断 `dict` 是否存在该 `key` 。
 
 将字典放入 for 循环中可以迭代所有的 `key` ：
-`for key in dict:
-	value = dict[key]`
+```python
+for key in dict:
+	value = dict[key]
+```
 
 在迭代过程中，无法保证 `key` 的迭代顺序。
 

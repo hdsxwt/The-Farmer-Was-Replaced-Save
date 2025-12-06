@@ -58,13 +58,17 @@ if __name__ == "__main__":
 如果文件 `a` 导入文件 `b`，同时文件 `b` 又导入文件 `a`，会发生什么？
 
 文件 `a`：
-`import b
-x = 0`
+```python
+import b
+x = 0
+```
 
 文件 `b`：
-`import a
+```
+import a
 def f():
-    print(a.x)`
+    print(a.x)
+	```
 
 这样写是没问题的。假设这两个文件都还没有被加载，然后其他人执行了 `import a`。
 
@@ -84,9 +88,11 @@ def f():
 x = 0`
 
 文件 `b`：
-`from a import *
+```python
+from a import *
 def f():
-    print(x)`
+    print(x)
+	```
 
 - `a` 运行到 `from b import *` 这一行。
 - `b` 运行到 `from a import *` 这一行。

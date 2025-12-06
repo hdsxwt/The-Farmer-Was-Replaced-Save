@@ -15,9 +15,11 @@
 ## 函数定义
 例如，你可以定义一个多次移动无人机的函数。
 
-`def move_n_dir(n, dir):
+```python
+def move_n_dir(n, dir):
 	for i in range(n):
-		move(dir)`
+		move(dir)
+		```
 
 `def` 关键字表示这定义了一个函数。
 `move_n_dir` 是函数绑定的名称。这是你自定义的变量名称，用于调用该函数。

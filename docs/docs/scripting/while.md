@@ -24,10 +24,12 @@ harvest()`
 然后循环就会执行循环内的代码，直到条件变为 `False`。
 `while` 循环的形式如下：
 
-`while 条件:
+```python
+while 条件:
 	#循环体
 	#循环体
-	#...`
+	#...
+	```
 
 `条件` 是 1 个布尔值，`#循环体` 则是你想要在满足 `True` 条件的情况下，一直要做的事情。
 
@@ -37,13 +39,17 @@ harvest()`
 所以你可以写
 
 
-`while False:
-	do_a_flip()`
+```python
+while False:
+	do_a_flip()
+	```
 
 或者
 
-`while True:
-	do_a_flip()`
+```python
+while True:
+	do_a_flip()
+	```
 
 第一个永远不会翻转，第二个会永远重复翻转（一个无限循环）。
 
